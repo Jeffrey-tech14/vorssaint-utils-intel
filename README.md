@@ -13,8 +13,18 @@
 </p>
 
 <p align="center">
-  <strong>Intel (x86_64) build.</strong> The source also supports Apple Silicon.
-  Native Liquid Glass is available on macOS 26 and newer where supported.
+  <strong>Unofficial, independently hosted source snapshot.</strong><br>
+  This is not the original or an official Vorssaint repository. It is derived
+  from and credits the <a href="https://github.com/vorssaint/vorssaint-utils">original Vorssaint project</a>,
+  which remains the canonical source for development, issues and official releases.
+</p>
+
+<p align="center">
+  <strong>What differs here:</strong> this separate repository presents an
+  Intel (x86_64)-focused build snapshot. The source still supports Apple Silicon
+  and builds for the host architecture; it is not an Intel-only code fork.
+  Liquid Glass is inherited from the upstream project and is available on
+  macOS 26 and newer where supported.
 </p>
 
 <p align="center">
@@ -28,9 +38,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vorssaint/vorssaint-utils/releases"><img src="https://img.shields.io/github/v/release/vorssaint/vorssaint-utils?label=release&color=4c8dff" alt="Latest release"></a>
-  <a href="https://github.com/vorssaint/vorssaint-utils/releases"><img src="https://img.shields.io/github/downloads/vorssaint/vorssaint-utils/total?color=4c8dff" alt="Downloads"></a>
-  <a href="https://github.com/vorssaint/vorssaint-utils/actions/workflows/ci.yml"><img src="https://github.com/vorssaint/vorssaint-utils/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="CI status"></a>
+  <a href="https://github.com/vorssaint/vorssaint-utils/releases"><img src="https://img.shields.io/github/v/release/vorssaint/vorssaint-utils?label=upstream%20release&color=4c8dff" alt="Latest official upstream release"></a>
+  <a href="https://github.com/vorssaint/vorssaint-utils/releases"><img src="https://img.shields.io/github/downloads/vorssaint/vorssaint-utils/total?label=upstream%20downloads&color=4c8dff" alt="Official upstream downloads"></a>
+  <a href="https://github.com/vorssaint/vorssaint-utils/actions/workflows/ci.yml"><img src="https://github.com/vorssaint/vorssaint-utils/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="Official upstream CI status"></a>
   <a href="#what-you-need"><img src="https://img.shields.io/badge/macOS-14%2B%20Intel%20%26%20Apple%20Silicon-black" alt="macOS 14 and newer, Intel and Apple Silicon"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0--or--later-blue" alt="License GPL 3.0 or later"></a>
 </p>
@@ -220,13 +230,13 @@ See the [permissions guide](docs/PERMISSIONS.md) for which features need access 
 ### Build it yourself
 
 ```sh
-git clone https://github.com/vorssaint/vorssaint-utils.git
-cd vorssaint-utils
+git clone https://github.com/Jeffrey-tech14/vorssaint-utils-intel.git
+cd vorssaint-utils-intel
 ./build.sh --dev            # build the separate Developer variant
 ./build.sh --dev --install  # install and launch it
 ```
 
-Xcode Command Line Tools are the only requirement. The [contributing guide](CONTRIBUTING.md) covers the layout and conventions. Official builds come only from the maintainer: the GPL covers the source, while the Vorssaint name, icon and look are covered by [TRADEMARKS.md](TRADEMARKS.md), so forks need their own identity.
+Xcode Command Line Tools are the only requirement. The [contributing guide](CONTRIBUTING.md) covers the layout and conventions. This repository has its own Git history and is maintained separately; it is not an official release channel or a claim of endorsement. The source is licensed under GPL-3.0-or-later, but that license does not grant rights to the Vorssaint name, icon or look. See [TRADEMARKS.md](TRADEMARKS.md) before redistributing a build; unofficial builds need their own identity.
 
 ## When something misbehaves
 
@@ -249,6 +259,7 @@ Vorssaint is free and open source. If the app has been useful to you and you’d
 
 ## Acknowledgements
 
+- The original Vorssaint project and source code are by [Vorssaint](https://github.com/vorssaint/vorssaint-utils); this repository is an unofficial derivative snapshot.
 - App icon designed by [@divisionseven](https://github.com/divisionseven)
 
 ## License
